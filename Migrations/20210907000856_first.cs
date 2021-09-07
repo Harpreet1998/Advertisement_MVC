@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-
+/// <summary>
+/// 
+/// </summary>
 namespace Advertisement_MVC_.Migrations
 {
     public partial class first : Migration
