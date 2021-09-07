@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title >@ViewData["Title"] - Advertisement_MVC_</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/layout/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="~/layout/scripts/jquery.min.js"></script>
+    <!-- Waterwheel Carousel -->
+    <script type="text/javascript" src="~/layout/scripts/carousel/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript" src="~/layout/scripts/carousel/jquery.waterwheelCarousel.setup.js"></script>
+</head>
+@*<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Advertisement_MVC_</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>*@
+<body id="top">
+    <div class="wrapper col1">
+        <div id="header">
+            <div class="fl_left">
+                <h1><a asp-controller="Home" asp-action="Index">Advertisement</a></h1>
+               
+                <p>Hire best kind of Employes for work</p>
+            </div>
+            <div class="float-xl-right">
+                <partial name="_LoginPartial" />
+            </div>
+            <br class="clear" />
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="bg-dark wrapper col2">
+        <div class="bg-dark" id="topbar">
+            <div class="bg-dark" id="topnav">
+                <ul>
+                    
+                    <li>
+                        
+
+                        <a style="background-color:yellow; color:black" href="#">Menu</a>
+                        <ul style="background-color:yellow; color:black">
+                            <li><a style="background-color:yellow; color:black" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a style="background-color:yellow; color:black" asp-area="" asp-controller="Candidates" asp-action="Index">Candidate</a></li>
+                            <li><a style="background-color:yellow; color:black" asp-area="" asp-controller="Employers" asp-action="Index">Employer</a></</li>
+                            <li><a style="background-color:yellow; color:black" asp-area="" asp-controller="Jobs" asp-action="Index">Jobs</a></</li>
+                            <li><a style="background-color:yellow; color:black" asp-area="" asp-controller="Apply_job_detail" asp-action="Index">Apply Detail</a></</li>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="search">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Site Search</legend>
+                        <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+                        <input style="background-color:yellow; color:black" type="submit" name="go" id="go" value="Search" />
+                    </fieldset>
+                </form>
+            </div>
+            <br class="clear" />
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="wrapper col5">
+        <div id="footer">
+         
+
+           
+            <br class="clear" />
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper col6">
+        <div id="copyright">
+            <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">Prabh</a></p>
+            <p class="fl_right"> <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates"> Templates</a></p>
+            <br class="clear" />
+        </div>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
