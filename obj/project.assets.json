@@ -7500,11 +7500,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atind\\Desktop\\Assignment\\Auckland\\Happy\\Advertisement\\Advertisement(MVC).csproj",
+      "projectUniqueName": "C:\\Users\\atind\\Desktop\\Assignment\\Auckland\\Happy\\MVC\\Advertisement\\Advertisement(MVC).csproj",
       "projectName": "Advertisement(MVC)",
-      "projectPath": "C:\\Users\\atind\\Desktop\\Assignment\\Auckland\\Happy\\Advertisement\\Advertisement(MVC).csproj",
+      "projectPath": "C:\\Users\\atind\\Desktop\\Assignment\\Auckland\\Happy\\MVC\\Advertisement\\Advertisement(MVC).csproj",
       "packagesPath": "C:\\Users\\atind\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atind\\Desktop\\Assignment\\Auckland\\Happy\\Advertisement\\obj\\",
+      "outputPath": "C:\\Users\\atind\\Desktop\\Assignment\\Auckland\\Happy\\MVC\\Advertisement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
